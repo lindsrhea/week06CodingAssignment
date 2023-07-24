@@ -131,7 +131,7 @@ class Game {
         while(player1.hands.length !== 0 && player2.hands.length !== 0) {
             let player1Card = player1.hands.pop();
             let player2Card = player2.hands.pop();
-            if (player1Card.vlaue > player2Card.value) {
+            if (player1Card.value > player2Card.value) {
                 winner = player1.name;
                 player1.points += 1;
                 console.log("Turn: ", (turn += 1), "\nPlayer 1 card: ", player1Card.name, " of ", player1Card.suit, "\nPlayer 2 card: ", player2Card.name, " of ", player2Card.suit, "\nThe winner is: ", player1.name)
